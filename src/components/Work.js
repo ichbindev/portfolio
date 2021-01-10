@@ -1,5 +1,17 @@
 import React from 'react'
 import pic02 from '../images/pic02.jpg'
+import Project from './Project'
+
+const projects = [
+  {
+    link: "http://www.ichbin.dev/",
+    image: pic02
+  },
+  {
+    link: "http://www.ichbin.dev/",
+    image: pic02
+  }
+]
 
 const Work = props => {
   return (
@@ -13,8 +25,7 @@ const Work = props => {
     <h2 className="major">Work</h2>
     <span className="image main">
       <div style={{display: "flex", flexDirection: "row"}}>
-        <a href="http://www.ichbin.dev/"><img src={pic02} alt="" style={{margin: "10px", width: "200px"}}/></a>
-        <a href="http://www.ichbin.dev/"><img src={pic02} alt="" style={{margin: "10px", width: "200px"}}/></a>
+        {projects.map(p => <Project link={p.link} image={p.image} />)}
       </div>
     </span>
     <p>
