@@ -42,18 +42,13 @@ const Contact = props => {
         </a>
       </li>
       <li>
-        <a href="https://codebushi.com" className="icon fa-facebook">
-          <span className="label">Facebook</span>
-        </a>
-      </li>
-      <li>
-        <a href="https://codebushi.com" className="icon fa-instagram">
+        <a href="https://linkedin.com/in/cmlinac" className="icon fa-linkedin">
           <span className="label">Instagram</span>
         </a>
       </li>
       <li>
         <a
-          href="https://github.com/codebushi/gatsby-starter-dimension"
+          href="https://github.com/ichbindev"
           className="icon fa-github"
         >
           <span className="label">GitHub</span>

@@ -1,17 +1,6 @@
 import React from 'react'
-import pic02 from '../images/pic02.jpg'
 import Project from './Project'
-
-const projects = [
-  {
-    link: "http://www.ichbin.dev/",
-    image: pic02
-  },
-  {
-    link: "http://www.ichbin.dev/",
-    image: pic02
-  }
-]
+import projects from '../content/projects'
 
 const Work = props => {
   return (
@@ -25,7 +14,12 @@ const Work = props => {
     <h2 className="major">Work</h2>
     <span className="image main">
       <div style={{display: "flex", flexDirection: "row"}}>
-        {projects.map(p => <Project link={p.link} image={p.image} />)}
+        {projects.map(p => 
+          (<Project 
+            link={p.link} 
+            image={p.image} 
+            description={p.description} 
+            name={p.name} />))}
       </div>
     </span>
     <p>
