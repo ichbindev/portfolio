@@ -2,16 +2,32 @@ import pic02 from '../images/pic02.jpg'
 
 const projects = [
   {
-    link: "http://www.ichbin.dev/",
+    link: 'http://joglogs.herokuapp.com/',
     image: pic02,
-    name: "Project 1",
-    description: 'project 1'
+    name: 'trainmethod',
+    description: 'project 1',
+    code: 'https://github.com/ichbindev/joglogs/'
   },
   {
-    link: "http://www.ichbin.dev/",
+    link: 'http://www.ichbin.dev/',
     image: pic02,
-    name: "Project 2",
-    description: 'project 2'
+    name: 'Blog',
+    description: 'project 2',
+    code: 'https://github.com/ichbindev/ichbindev/'
+  },
+  {
+    link: 'http://www.ichbin.dev/',
+    image: pic02,
+    name: 'FiveStar Prospects',
+    description: 'project 2',
+    code: 'https://github.com/ichbindev/ichbindev/'
+  },
+  {
+    link: 'http://www.ichbin.dev/',
+    image: pic02,
+    name: 'Psych',
+    description: 'project 2',
+    code: 'https://github.com/ichbindev/ichbindev/'
   }
 ]
 

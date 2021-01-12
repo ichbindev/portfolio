@@ -1,10 +1,11 @@
 import React from 'react'
 
-const Project = ({link, image, name}) => {
+const Project = ({link, image, name, code}) => {
   return (
-    <div>
-      <a href={link}><img src={image} alt="" style={{margin: "1rem 0", width: "60%"}}/></a>
-      <h4>{name}</h4>
+    <div className="project" style={{margin: '1rem'}}>
+      <a href={link}><img src={image} alt="" style={{width: "220px"}}/></a>
+      <h4><a href={code} className="icon fa-github"/> {name}</h4>
+      
     </div>
   )
 }

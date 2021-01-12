@@ -9,8 +9,8 @@ const Header = props => (
     <div className="content">
       <div className="inner">
         <h1>Chris Mlinac</h1>
-        <p>
-          Welcome to my portfolio! This site is brand new and very much a work in progress so please forgive the lorem ipsum and unfinished features.
+        <p style={{width: "50%", margin: "0 auto"}}>
+          Welcome to my portfolio! This isd very much a work in progress, so please forgive the lorem ipsum and unfinished features!
         </p>
       </div>
     </div>
