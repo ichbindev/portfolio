@@ -5,29 +5,29 @@ const projects = [
     link: 'http://joglogs.herokuapp.com/',
     image: pic02,
     name: 'trainmethod',
-    description: 'project 1',
+    description: 'Create custom workout plans to prepare for your big run',
     code: 'https://github.com/ichbindev/joglogs/'
   },
   {
     link: 'http://www.ichbin.dev/',
     image: pic02,
     name: 'Blog',
-    description: 'project 2',
+    description: 'Where I write stuff occasionally',
     code: 'https://github.com/ichbindev/ichbindev/'
   },
   {
     link: 'http://www.ichbin.dev/',
     image: pic02,
     name: 'FiveStar Prospects',
-    description: 'project 2',
+    description: 'A NCAA certified recruiting site for college football',
     code: 'https://github.com/ichbindev/ichbindev/'
   },
   {
-    link: 'http://www.ichbin.dev/',
+    link: 'https://ichbindev.github.io/Psych/',
     image: pic02,
     name: 'Psych',
-    description: 'project 2',
-    code: 'https://github.com/ichbindev/ichbindev/'
+    description: 'A memory game built with React',
+    code: 'https://github.com/ichbindev/Psych'
   }
 ]
 
