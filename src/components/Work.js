@@ -3,7 +3,7 @@ import Project from './Project'
 import projects from '../content/projects'
 
 const Work = props => {
-  const description = useState("Hover over a project for more information.")
+  const [description, setDescription] = useState("Hover over a project for more information.")
 
   return (
     <article
@@ -22,7 +22,8 @@ const Work = props => {
               image={p.image} 
               description={p.description} 
               name={p.name} 
-              code={p.code}/>))}
+              code={p.code}
+              onHover={() => setDescription(p.description)}/>))}
         </div>
       </span>
     <p>

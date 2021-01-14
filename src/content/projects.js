@@ -11,16 +11,16 @@ const projects = [
   {
     link: 'http://www.ichbin.dev/',
     image: pic02,
-    name: 'Blog',
-    description: 'Where I write stuff occasionally',
+    name: 'ichbindev blog',
+    description: 'Where I write stuff',
     code: 'https://github.com/ichbindev/ichbindev/'
   },
   {
-    link: 'http://www.ichbin.dev/',
+    link: 'http://www.fivestarprospects.com/',
     image: pic02,
-    name: 'FiveStar Prospects',
+    name: 'FiveStar Prospects (Contract)',
     description: 'A NCAA certified recruiting site for college football',
-    code: 'https://github.com/ichbindev/ichbindev/'
+    code: 'https://github.com/ichbindev/'
   },
   {
     link: 'https://ichbindev.github.io/Psych/',
