@@ -18,7 +18,7 @@ const projects = [
   {
     link: 'http://www.fivestarprospects.com/',
     image: pic02,
-    name: 'FiveStar Prospects (Contract)',
+    name: 'FiveStar Prospects',
     description: 'A NCAA certified recruiting site for college football',
     code: 'https://github.com/ichbindev/'
   },
