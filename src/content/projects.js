@@ -5,29 +5,33 @@ const projects = [
     link: 'http://joglogs.herokuapp.com/',
     image: pic02,
     name: 'trainmethod',
-    description: 'Create custom workout plans to prepare for your big run',
-    code: 'https://github.com/ichbindev/joglogs/'
+    description: 'TrainMethod is a webapp that creates a custom running schedule to train for your big run, whether it\'s a 5k or a marathon.',
+    code: 'https://github.com/ichbindev/joglogs/',
+    tech: ['React', 'JavaScript', 'Node', 'Express', 'MySQL']
   },
   {
     link: 'http://www.ichbin.dev/',
     image: pic02,
     name: 'ichbindev blog',
-    description: 'Where I write stuff',
-    code: 'https://github.com/ichbindev/ichbindev/'
+    description: 'Where I write stuff from time to time, also where I chronicled my 100 Days of Code challenge.',
+    code: 'https://github.com/ichbindev/ichbindev/',
+    tech: ['React', 'JavaScript', 'GraphQL', 'Gatsby', 'Tailwind']
   },
   {
     link: 'http://www.fivestarprospects.com/',
     image: pic02,
     name: 'FiveStar Prospects',
-    description: 'A NCAA certified recruiting site for college football',
-    code: 'https://github.com/ichbindev/'
+    description: 'A NCAA certified tool to help college football coaches find students to recruit. Players can upload their stats and highlight reels and coaches can search for student athletes.',
+    code: 'https://github.com/ichbindev/',
+    tech: ['JavaScript', 'jQuery', 'Node', 'Express', 'MySQL']
   },
   {
     link: 'https://ichbindev.github.io/Psych/',
     image: pic02,
     name: 'Psych',
-    description: 'A memory game built with React',
-    code: 'https://github.com/ichbindev/Psych'
+    description: 'A little memory game themed with the TV show Psych. Click all nine characters exactly once, get it wrong and you have to start over.',
+    code: 'https://github.com/ichbindev/Psych',
+    tech: ['React']
   }
 ]
 
