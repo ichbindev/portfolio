@@ -1,9 +1,12 @@
-import pic02 from '../images/pic02.jpg'
+import esistblog from '../images/projects/esistblog.png'
+import fiveStarProspects from '../images/projects/fiveStarProspects.png'
+import psych from '../images/projects/psych.png'
+import trainmethod from '../images/projects/trainmethod.png'
 
 const projects = [
   {
     link: 'http://joglogs.herokuapp.com/',
-    image: pic02,
+    image: trainmethod,
     name: 'trainmethod',
     description: 'TrainMethod is a webapp that creates a custom running schedule to train for your big run, whether it\'s a 5k or a marathon.',
     code: 'https://github.com/ichbindev/joglogs/',
@@ -11,7 +14,7 @@ const projects = [
   },
   {
     link: 'http://www.ichbin.dev/',
-    image: pic02,
+    image: esistblog,
     name: 'ichbindev blog',
     description: 'Where I write stuff from time to time, also where I chronicled my 100 Days of Code challenge.',
     code: 'https://github.com/ichbindev/ichbindev/',
@@ -19,7 +22,7 @@ const projects = [
   },
   {
     link: 'http://www.fivestarprospects.com/',
-    image: pic02,
+    image: fiveStarProspects,
     name: 'FiveStar Prospects',
     description: 'A NCAA certified tool to help college football coaches find students to recruit. Players can upload their stats and highlight reels and coaches can search for student athletes.',
     code: 'https://github.com/ichbindev/',
@@ -27,7 +30,7 @@ const projects = [
   },
   {
     link: 'https://ichbindev.github.io/Psych/',
-    image: pic02,
+    image: psych,
     name: 'Psych',
     description: 'A little memory game themed with the TV show Psych. Click all nine characters exactly once, get it wrong and you have to start over.',
     code: 'https://github.com/ichbindev/Psych',
