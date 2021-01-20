@@ -4,11 +4,11 @@ import projects from '../content/projects'
 
 const Work = props => {
   const [description, setDescription] = useState("Hover over a project for more information.")
-  const [techUsed, setTextUsed] = useState([])
+  const [techUsed, setTechUsed] = useState([])
 
   const onHover = project => {
     setDescription(project.description)
-    setTextUsed(project.tech)
+    setTechUsed(project.tech)
   }
 
   return (
@@ -34,9 +34,11 @@ const Work = props => {
     <p>
       {description}
     </p>
-    <p>
-      Technologies Used: {techUsed.join(', ')}
-    </p>
+    { !!techUsed.length &&
+      <p>
+        Technologies Used: {techUsed.join(', ')}
+      </p>
+    }
     {props.close}
   </article>
 
