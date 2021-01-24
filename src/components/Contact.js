@@ -1,17 +1,19 @@
-import React, { useState } from 'react' 
+import React, { useState } from 'react';
 
 const Contact = props => {
-  const [name, setName] = useState('')
-  const [email, setEmail] = useState('')
-  const [message, setMessage] = useState('')
+  const [name, setName] = useState('');
+  const [email, setEmail] = useState('');
+  const [message, setMessage] = useState('');
 
   const onSubmit = evt => {
     evt.preventDefault();
     const form = {
-      name, email, message
-    }
+      name,
+      email,
+      message,
+    };
     // email form
-  }
+  };
 
   return (
     <article
@@ -44,35 +46,30 @@ const Contact = props => {
           </li>
         </ul>
       </form> */}
-      <p>
-        Feel free to reach out at any of the sites below!
-      </p>
-      <ul className="icons"> 
+      <p>Feel free to reach out at any of the sites below!</p>
+      <ul className="icons">
         <li>
-          <a
-            href="https://twitter.com/ichbindev"
-            className="icon fa-twitter"
-          >
+          <a href="https://twitter.com/ichbindev" className="icon fa-twitter">
             <span className="label">Twitter</span>
           </a>
         </li>
         <li>
-          <a href="https://linkedin.com/in/cmlinac" className="icon fa-linkedin">
+          <a
+            href="https://linkedin.com/in/cmlinac"
+            className="icon fa-linkedin"
+          >
             <span className="label">Instagram</span>
           </a>
         </li>
         <li>
-          <a
-            href="https://github.com/ichbindev"
-            className="icon fa-github"
-          >
+          <a href="https://github.com/ichbindev" className="icon fa-github">
             <span className="label">GitHub</span>
           </a>
         </li>
       </ul>
       {props.close}
     </article>
-  )
-}
+  );
+};
 
-export default Contact
+export default Contact;

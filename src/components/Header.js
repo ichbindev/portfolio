@@ -1,5 +1,5 @@
-import PropTypes from 'prop-types'
-import React from 'react'
+import PropTypes from 'prop-types';
+import React from 'react';
 
 const Header = props => (
   <header id="header" style={props.timeout ? { display: 'none' } : {}}>
@@ -9,9 +9,7 @@ const Header = props => (
     <div className="content">
       <div className="inner">
         <h1>Chris Mlinac</h1>
-        <p style={{width: "50%", margin: "0 auto"}}>
-          Full Stack Developer
-        </p>
+        <p style={{ width: '50%', margin: '0 auto' }}>Full Stack Developer</p>
       </div>
     </div>
     <nav>
@@ -19,7 +17,7 @@ const Header = props => (
         <li>
           <button
             onClick={() => {
-              props.onOpenArticle('intro')
+              props.onOpenArticle('intro');
             }}
           >
             Intro
@@ -28,7 +26,7 @@ const Header = props => (
         <li>
           <button
             onClick={() => {
-              props.onOpenArticle('work')
+              props.onOpenArticle('work');
             }}
           >
             Work
@@ -37,7 +35,7 @@ const Header = props => (
         <li>
           <button
             onClick={() => {
-              props.onOpenArticle('about')
+              props.onOpenArticle('about');
             }}
           >
             About
@@ -46,7 +44,7 @@ const Header = props => (
         <li>
           <button
             onClick={() => {
-              props.onOpenArticle('contact')
+              props.onOpenArticle('contact');
             }}
           >
             Contact
@@ -55,11 +53,11 @@ const Header = props => (
       </ul>
     </nav>
   </header>
-)
+);
 
 Header.propTypes = {
   onOpenArticle: PropTypes.func,
   timeout: PropTypes.bool,
-}
+};
 
-export default Header
+export default Header;

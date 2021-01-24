@@ -1,10 +1,9 @@
-import PropTypes from 'prop-types'
-import React from 'react'
-import Intro from './Intro'
-import Work from './Work'
-import About from './About'
-import Contact from './Contact'
-
+import PropTypes from 'prop-types';
+import React from 'react';
+import Intro from './Intro';
+import Work from './Work';
+import About from './About';
+import Contact from './Contact';
 
 class Main extends React.Component {
   render() {
@@ -12,10 +11,10 @@ class Main extends React.Component {
       <div
         className="close"
         onClick={() => {
-          this.props.onCloseArticle()
+          this.props.onCloseArticle();
         }}
       ></div>
-    )
+    );
 
     return (
       <div
@@ -23,13 +22,12 @@ class Main extends React.Component {
         id="main"
         style={this.props.timeout ? { display: 'flex' } : { display: 'none' }}
       >
-       <Intro close={close} {...this.props} />
-       <Work close={close} {...this.props} />
-       <About close={close} {...this.props} />
-       <Contact close={close} {...this.props} />
-
+        <Intro close={close} {...this.props} />
+        <Work close={close} {...this.props} />
+        <About close={close} {...this.props} />
+        <Contact close={close} {...this.props} />
       </div>
-    )
+    );
   }
 }
 
@@ -40,6 +38,6 @@ Main.propTypes = {
   onCloseArticle: PropTypes.func,
   timeout: PropTypes.bool,
   setWrapperRef: PropTypes.func.isRequired,
-}
+};
 
-export default Main
+export default Main;
