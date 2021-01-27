@@ -32,6 +32,7 @@ const Work = props => {
         >
           {projects.map(p => (
             <Project
+              key={p.id}
               link={p.link}
               image={p.image}
               name={p.name}

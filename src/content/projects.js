@@ -12,6 +12,7 @@ const projects = [
       "TrainMethod is a webapp that creates a custom running schedule to train for your big run, whether it's a 5k or a marathon.",
     code: 'https://github.com/ichbindev/joglogs/',
     tech: ['React', 'JavaScript', 'Node', 'Express', 'MySQL'],
+    id: 0
   },
   {
     link: 'http://www.ichbin.dev/',
@@ -21,6 +22,7 @@ const projects = [
       'Where I write stuff from time to time, also where I chronicled my 100 Days of Code challenge.',
     code: 'https://github.com/ichbindev/ichbindev/',
     tech: ['React', 'JavaScript', 'GraphQL', 'Gatsby', 'Tailwind'],
+    id: 1
   },
   {
     link: 'http://www.fivestarprospects.com/',
@@ -30,6 +32,7 @@ const projects = [
       'A NCAA certified tool to help college football coaches find students to recruit. Players can upload their stats and highlight reels and coaches can search for student athletes.',
     code: 'https://github.com/ichbindev/',
     tech: ['JavaScript', 'jQuery', 'Node', 'Express', 'MySQL'],
+    id: 2
   },
   {
     link: 'https://ichbindev.github.io/Psych/',
@@ -39,6 +42,7 @@ const projects = [
       'A little memory game themed with the TV show Psych. Click all nine characters exactly once, get it wrong and you have to start over.',
     code: 'https://github.com/ichbindev/Psych',
     tech: ['React'],
+    id: 3
   },
 ];
 
