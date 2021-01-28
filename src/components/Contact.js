@@ -1,18 +1,19 @@
 import React, { useState } from 'react';
+import { sendEmail } from '../util/api';
 
 const Contact = props => {
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');
-  const [message, setMessage] = useState('');
+  const [content, setContent] = useState('');
 
   const onSubmit = evt => {
     evt.preventDefault();
     const form = {
       name,
       email,
-      message,
+      content
     };
-    // email form
+    sendEmail(form);
   };
 
   return (
@@ -24,7 +25,7 @@ const Contact = props => {
       style={{ display: 'none' }}
     >
       <h2 className="major">Contact</h2>
-      {/* <form method="post" action="#">
+      <form method="post" action="#">
         <div className="field half first">
           <label htmlFor="name">Name</label>
           <input type="text" name="name" id="name" value={name} onChange={evt => setName(evt.target.value)} />
@@ -35,7 +36,7 @@ const Contact = props => {
         </div>
         <div className="field">
           <label htmlFor="message">Message</label>
-          <textarea name="message" id="message" rows="4" value={message} onChange={evt => setMessage(evt.target.value)} />
+          <textarea name="message" id="message" rows="4" value={content} onChange={evt => setContent(evt.target.value)} />
         </div>
         <ul className="actions">
           <li>
@@ -45,7 +46,7 @@ const Contact = props => {
             <input type="reset" value="Reset" />
           </li>
         </ul>
-      </form> */}
+      </form>
       <p>Feel free to reach out at any of the sites below!</p>
       <ul className="icons">
         <li>

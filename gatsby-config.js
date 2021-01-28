@@ -20,4 +20,8 @@ module.exports = {
     },
     'gatsby-plugin-sass',
   ],
+  proxy: {
+    prefix: '/lambda',
+    url: 'https://wsr7hp49k9.execute-api.us-east-1.amazonaws.com'
+  }
 };
