@@ -6,12 +6,13 @@ module.exports = {
     author: 'Chris Mlinac',
     description: 'My Portfolio',
     url: "https://www.mlin.ac", // No trailing slash allowed!
-    siteUrl: "https://www.  mlin.ac", // No trailing slash allowed!
+    siteUrl: "https://www.mlin.ac", // No trailing slash allowed!
     image: "/img/avatar/avatar.jpg", // Path to your image you placed in the 'static' folder
     twitterUsername: "@ichbindev",
   },
   plugins: [
     'gatsby-plugin-react-helmet',
+    `gatsby-plugin-sitemap`,
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
@@ -25,6 +26,14 @@ module.exports = {
       },
     },
     'gatsby-plugin-sass',
+    {
+      resolve: "gatsby-plugin-robots-txt",
+      options: {
+        host: "https://www.mlin.ac",
+        sitemap: "https://www.mlin.ac/sitemap.xml",
+        policy: [{ userAgent: "*", allow: "/" }],
+      },
+    }
   ],
   proxy: {
     prefix: '/lambda',
