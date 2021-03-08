@@ -1,6 +1,7 @@
 export const sendEmail = (body) => {
-  const env = process.env.NODE_ENV;
-  const url = `/lambda/${env}/email/send`;
+  // const env = process.env.NODE_ENV;
+  // const url = `/lambda/${env}/email/send`;
+  const url = `/lambda/prod/email/send`;
   const requestOptions = {
     method: 'POST',
     mode: 'cors',

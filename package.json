@@ -2,7 +2,7 @@
   "name": "ichbindev-portfolio",
   "description": "Gatsby Starter - Dimension V2",
   "version": "1.0.0",
-  "author": "Hunter Chang",
+  "author": "Chris Mlinac",
   "dependencies": {
     "gatsby": "^2.19.5",
     "gatsby-plugin-manifest": "^2.2.38",

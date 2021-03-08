@@ -1,8 +1,14 @@
 module.exports = {
   siteMetadata: {
-    title: 'Chris Mlinac - Portfolio',
+    title: "Chris Mlinac - Portfolio",
+    defaultTitle: "Chris Mlinac - Portfolio",
+    titleTemplate: "%s",
     author: 'Chris Mlinac',
     description: 'My Portfolio',
+    url: "https://www.mlin.ac", // No trailing slash allowed!
+    siteUrl: "https://www.  mlin.ac", // No trailing slash allowed!
+    image: "/img/avatar/avatar.jpg", // Path to your image you placed in the 'static' folder
+    twitterUsername: "@ichbindev",
   },
   plugins: [
     'gatsby-plugin-react-helmet',
@@ -22,6 +28,6 @@ module.exports = {
   ],
   proxy: {
     prefix: '/lambda',
-    url: 'https://wsr7hp49k9.execute-api.us-east-1.amazonaws.com'
+    url: 'https://d5o2rd8lqa.execute-api.us-east-1.amazonaws.com'
   }
 };
