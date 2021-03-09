@@ -23,7 +23,7 @@ const Intro = props => {
         Austin, Texas. My hobbies include metalworking, rock climbing, and
         customizing mechanical keyboards. When I'm not doing the above, you can
         find me sitting on the couch and watching Netflix with my wife, Haley,
-        and cat, Jackson.
+        and cats, Jackson and Johnny.
       </p>
       {props.close}
     </article>
