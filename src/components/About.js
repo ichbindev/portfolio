@@ -44,9 +44,13 @@ const About = props => {
         I work on a SaaS product that allows users to create and customize rich
         forms, manage the responses, and create events to be managed through our
         product. I’m really enjoying working on our newer applications, written
-        in React and TypeScript and deployed on AWS. This role has also given me
+        in React and TypeScript and deployed on AWS. This role also gave me
         the opportunity to mentor other developers, which in my opinion is the
-        most rewarding part of my job.
+        most rewarding part of my work.
+      </p>
+      <p>
+        Currently, I am working as a full stack developor at ZenBusiness PBC, 
+        where I am continuing to learn and grow as an engineer.
       </p>
       {props.close}
     </article>
