@@ -25,7 +25,7 @@ const Contact = props => {
       style={{ display: 'none' }}
     >
       <h2 className="major">Contact</h2>
-      <form method="post" action="#">
+      {/* <form method="post" action="#">
         <div className="field half first">
           <label htmlFor="name">Name</label>
           <input type="text" name="name" id="name" value={name} onChange={evt => setName(evt.target.value)} />
@@ -46,7 +46,7 @@ const Contact = props => {
             <input type="reset" value="Reset" />
           </li>
         </ul>
-      </form>
+      </form> */}
       <p>Feel free to reach out at any of the sites below!</p>
       <ul className="icons">
         <li>
