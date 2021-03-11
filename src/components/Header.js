@@ -4,7 +4,7 @@ import React from 'react';
 const Header = props => (
   <header id="header" style={props.timeout ? { display: 'none' } : {}}>
     <div className="logo">
-      <span className="icon fa-code"></span>
+      <a href="https://www.github.com/ichbindev" style={{textDecoration: 'none'}}><span className="icon fa-code"></span></a>
     </div>
     <div className="content">
       <div className="inner">
