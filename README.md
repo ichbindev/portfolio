@@ -1,6 +1,6 @@
 # Portfolio
 
-Welcome to my portfolio. It's a simple business-card site built using Gatsby and React.
+Welcome to my portfolio. It's a simple business-card site built using Gatsby and React. You can visit it live on the web at [mlin.ac](https://www.mlin.ac)
 
 ## Running and Building
 
