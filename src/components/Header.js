@@ -1,10 +1,11 @@
 import PropTypes from 'prop-types';
 import React from 'react';
+import avatar from '../images/avataar.svg'
 
 const Header = props => (
   <header id="header" style={props.timeout ? { display: 'none' } : {}}>
     <div className="logo">
-      <a href="https://www.github.com/ichbindev" style={{textDecoration: 'none'}}><span className="icon fa-code"></span></a>
+      <a href="https://www.github.com/ichbindev" style={{textDecoration: 'none'}}><img src={avatar} style={{width: '100%'}}/></a>
     </div>
     <div className="content">
       <div className="inner">
