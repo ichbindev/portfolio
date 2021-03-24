@@ -3,7 +3,7 @@ module.exports = {
     title: "Chris Mlinac - Portfolio",
     defaultTitle: "Chris Mlinac - Portfolio",
     titleTemplate: "%s",
-    author: 'Chris Mlinac',
+    author: 'Christopher Mlinac',
     description: 'My Portfolio',
     url: "https://www.mlin.ac", // No trailing slash allowed!
     siteUrl: "https://www.mlin.ac", // No trailing slash allowed!

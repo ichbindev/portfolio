@@ -5,7 +5,9 @@ import avatar from '../images/avataar.svg'
 const Header = props => (
   <header id="header" style={props.timeout ? { display: 'none' } : {}}>
     <div className="logo">
-      <a href="https://www.github.com/ichbindev" style={{textDecoration: 'none'}}><img src={avatar} style={{width: '100%'}}/></a>
+      <a href="https://www.github.com/ichbindev" style={{textDecoration: 'none'}}>
+        <img src={avatar} alt="cartoon self portrait" style={{width: '100%', position: 'relative', bottom: '9px'}}/>
+      </a>
     </div>
     <div className="content">
       <div className="inner">
