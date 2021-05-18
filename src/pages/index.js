@@ -12,7 +12,7 @@ class IndexPage extends React.Component {
       isArticleVisible: false,
       timeout: false,
       articleTimeout: false,
-      article: '',
+      article: props.article || '',
       loading: 'is-loading',
     };
     this.handleOpenArticle = this.handleOpenArticle.bind(this);
@@ -26,6 +26,13 @@ class IndexPage extends React.Component {
       this.setState({ loading: '' });
     }, 100);
     document.addEventListener('mousedown', this.handleClickOutside);
+
+    // render article passed into component as a prop
+    const { article } = this.props;
+
+    if (article) {
+      this.handleOpenArticle(article);
+    }
   }
 
   componentWillUnmount() {
