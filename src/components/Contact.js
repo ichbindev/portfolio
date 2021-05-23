@@ -1,10 +1,22 @@
 import React, { useState } from 'react';
-import { sendEmail } from '../util/api';
+import emailjs, { init } from 'emailjs-com';
+
 
 const Contact = props => {
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');
   const [content, setContent] = useState('');
+  const userId = 'user_8bsMZiIvuUMx8xjOsSNiU'
+  const templateId = 'template_zvar50i';
+
+  init(userId);
+
+  const reset = evt => {
+    evt.preventDefault();
+    setName('');
+    setEmail('');
+    setContent('');
+  }
 
   const onSubmit = evt => {
     evt.preventDefault();
@@ -13,7 +25,8 @@ const Contact = props => {
       email,
       content
     };
-    sendEmail(form);
+    emailjs.send('default_service', templateId, form);
+    reset(evt);
   };
 
   return (
@@ -25,7 +38,7 @@ const Contact = props => {
       style={{ display: 'none' }}
     >
       <h2 className="major">Contact</h2>
-      {/* <form method="post" action="#">
+      <form method="post" action="#">
         <div className="field half first">
           <label htmlFor="name">Name</label>
           <input type="text" name="name" id="name" value={name} onChange={evt => setName(evt.target.value)} />
@@ -43,10 +56,10 @@ const Contact = props => {
             <input type="submit" value="Send Message" className="special" onClick={onSubmit}/>
           </li>
           <li>
-            <input type="reset" value="Reset" />
+            <input type="submit" value="Reset" onClick={reset}/>
           </li>
         </ul>
-      </form> */}
+      </form>
       <p>Feel free to reach out at any of the sites below!</p>
       <ul className="icons">
         <li>

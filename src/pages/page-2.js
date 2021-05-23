@@ -1,5 +1,4 @@
 import React from 'react';
-import { Link } from 'gatsby';
 import { sendEmail } from '../util/api';
 
 import Layout from '../components/layout';
@@ -18,7 +17,7 @@ const SecondPage = () => {
   return (
   <Layout>
     <h1>Test</h1>
-    <button type='submit' onClick={onSubmit}>Test</button>
+    {/* <button type='submit' onClick={onSubmit}>Test</button> */}
   </Layout>
 )};
 
