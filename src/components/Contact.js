@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import emailjs, { init } from 'emailjs-com';
+import Social from './Social';
 
 
 const Contact = props => {
@@ -38,7 +39,7 @@ const Contact = props => {
       content
     };
     if (validateForm()) {
-      // emailjs.send('default_service', templateId, form);
+      emailjs.send('default_service', templateId, form);
       setSubmitted(submitted => !submitted);
       reset(evt);
     }
@@ -82,27 +83,6 @@ const Contact = props => {
           </ul>
         </form>)
       }
-      <p>Feel free to reach out at any of the sites below!</p>
-      <ul className="icons">
-        <li>
-          <a href="https://twitter.com/ichbindev" className="icon fa-twitter">
-            <span className="label">Twitter</span>
-          </a>
-        </li>
-        <li>
-          <a
-            href="https://linkedin.com/in/cmlinac"
-            className="icon fa-linkedin"
-          >
-            <span className="label">Instagram</span>
-          </a>
-        </li>
-        <li>
-          <a href="https://github.com/ichbindev" className="icon fa-github">
-            <span className="label">GitHub</span>
-          </a>
-        </li>
-      </ul>
       {props.close}
     </article>
   );
