@@ -2,6 +2,7 @@ import esistblog from '../images/projects/esistblog.png';
 import fiveStarProspects from '../images/projects/fiveStarProspects.png';
 import psych from '../images/projects/psych.png';
 import trainmethod from '../images/projects/trainmethod.png';
+import whichCat from '../images/projects/whichCat.png';
 
 const projects = [
   {
@@ -43,6 +44,16 @@ const projects = [
     code: 'https://github.com/ichbindev/Psych',
     tech: ['React'],
     id: 3
+  },
+  {
+    link: 'https://github.com/ichbindev/whichCat.js/blob/master/README.md',
+    image: whichCat,
+    name: 'whichCat.js',
+    description:
+      'A self-study iOS app able to correctly identify my cats using a machine learning model I trained.',
+    code: 'https://github.com/ichbindev/whichCat.js',
+    tech: ['Swift', 'iOS', 'TensorFlow Lite', 'TensorFlow.js', 'Machine Learning', 'Image Classification'],
+    id: 4
   },
 ];
 
