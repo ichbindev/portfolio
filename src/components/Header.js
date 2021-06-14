@@ -1,6 +1,8 @@
 import PropTypes from 'prop-types';
 import React from 'react';
-import avatar from '../images/avataar.svg'
+import avatar from '../images/avataar.svg';
+
+const centerText = { margin: '0 auto' };
 
 const Header = props => (
   <header id="header" style={props.timeout ? { display: 'none' } : {}}>
@@ -22,6 +24,7 @@ const Header = props => (
             onClick={() => {
               props.onOpenArticle('intro');
             }}
+            style={centerText}
           >
             Intro
           </button>
@@ -31,6 +34,7 @@ const Header = props => (
             onClick={() => {
               props.onOpenArticle('work');
             }}
+            style={centerText}
           >
             Work
           </button>
@@ -40,6 +44,7 @@ const Header = props => (
             onClick={() => {
               props.onOpenArticle('about');
             }}
+            style={centerText}
           >
             About
           </button>
@@ -49,6 +54,7 @@ const Header = props => (
             onClick={() => {
               props.onOpenArticle('contact');
             }}
+            style={centerText}
           >
             Contact
           </button>

@@ -91,6 +91,7 @@
 		@include breakpoint(small) {
 			article {
 				@include padding(2rem, 2rem, (1.5rem, 0, 0.5rem, 0));
+        width: 100%;
 				.close {
 					&:before {
 						top: 0.875rem;
@@ -106,6 +107,7 @@
 		@include breakpoint(xsmall) {
 			article {
 				@include padding(2rem, 1.5rem, (1rem, 0, 0.5rem, 0));
+        width: 100%;
 			}
 		}
 	}

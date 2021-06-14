@@ -2,7 +2,7 @@ import React from 'react';
 
 const Project = ({ link, image, name, code, onHover }) => {
   return (
-    <div className="project" style={{ margin: '1rem' }} onMouseEnter={onHover}>
+    <div className="project" style={{ margin: '1rem auto' }} onMouseEnter={onHover}>
       <a href={link}>
         <img
           src={image}
