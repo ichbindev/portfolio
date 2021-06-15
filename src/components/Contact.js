@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import emailjs, { init } from 'emailjs-com';
-import Social from './Social';
 
+const isStandaloneContactPage = window.location.pathname.indexOf('contact') > -1;
 
 const Contact = props => {
   const [name, setName] = useState('');
@@ -83,7 +83,7 @@ const Contact = props => {
           </ul>
         </form>)
       }
-      {props.close}
+      {!isStandaloneContactPage && props.close}
     </article>
   );
 };
