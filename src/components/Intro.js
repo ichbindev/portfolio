@@ -19,11 +19,10 @@ const Intro = props => {
         />
       </span>
       <p>
-        Hi! My name is Chris, and I'm a web developer currently living in
+        Hi! My name is Chris, and I'm a web developer living in
         Austin, Texas. My hobbies include metalworking, rock climbing, and
-        customizing mechanical keyboards. When I'm not doing the above, you can
-        find me sitting on the couch hanging out with my wife, Haley,
-        and cats, Jackson and Johnny.
+        customizing mechanical keyboards. When I'm not doing the former, you can
+        find me hanging out with my wife, Haley, and cats, Jackson and Johnny.
       </p>
       {props.close}
     </article>

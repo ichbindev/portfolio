@@ -49,8 +49,8 @@ const About = props => {
         most rewarding part of my work.
       </p>
       <p>
-        Currently, I am working as a full stack developor at ZenBusiness, 
-        where I am continuing to learn and grow as an engineer. Though 
+        Currently, I am working as a Senior Full Stack Engineer at ZenBusiness, 
+        where I am continuing to learn and refine my skills. Though 
         I am a full stack engineer, I have been focusing on the frontend 
         lately. This, coupled with my experience on the backend, allows
         me to feel comfortable in any part of the stack, from SQL to CSS.
