@@ -51,9 +51,9 @@ const About = props => {
       <p>
         Currently, I am working as a Senior Full Stack Engineer at ZenBusiness, 
         where I am continuing to learn and refine my skills. Though 
-        I am a full stack engineer, I have been focusing on the frontend 
-        lately. This, coupled with my experience on the backend, allows
-        me to feel comfortable in any part of the stack, from SQL to CSS.
+        I am a full stack engineer, I have been focusing on the frontend.
+        This, coupled with my experience on the backend, allows
+        me to feel comfortable in any part of the stack, whether it be SQL or CSS.
       </p>
       {props.close}
     </article>
