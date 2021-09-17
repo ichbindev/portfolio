@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import emailjs, { init } from 'emailjs-com';
 
-const isStandaloneContactPage = window.location.pathname.indexOf('contact') > -1;
+const isStandaloneContactPage = typeof window !== 'undefined' ? window.location.pathname.indexOf('contact') > -1 : false;
 
 const Contact = props => {
   const [name, setName] = useState('');
