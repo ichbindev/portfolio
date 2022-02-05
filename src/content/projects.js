@@ -16,16 +16,6 @@ const projects = [
     id: 0
   },
   {
-    link: 'http://www.ichbin.dev/',
-    image: esistblog,
-    name: 'ichbindev blog',
-    description:
-      'Where I write stuff from time to time, also where I chronicled my 100 Days of Code challenge.',
-    code: 'https://github.com/ichbindev/ichbindev/',
-    tech: ['React', 'JavaScript', 'GraphQL', 'Gatsby', 'Tailwind'],
-    id: 1
-  },
-  {
     link: 'http://www.fivestarprospects.com/',
     image: fiveStarProspects,
     name: 'FiveStar Prospects',
@@ -36,6 +26,26 @@ const projects = [
     id: 2
   },
   {
+    link: 'http://www.ichbin.dev/',
+    image: esistblog,
+    name: 'ichbindev blog',
+    description:
+      'Where I write stuff from time to time, also where I chronicled my 100 Days of Code challenge.',
+    code: 'https://github.com/ichbindev/ichbindev/',
+    tech: ['React', 'JavaScript', 'GraphQL', 'Gatsby', 'Tailwind'],
+    id: 1
+  },
+  {
+    link: 'https://github.com/ichbindev/whichCat.js/blob/master/README.md',
+    image: whichCat,
+    name: 'whichCat',
+    description:
+      'A self-study iOS app able to correctly identify my cats using a machine learning model I trained.',
+    code: 'https://github.com/ichbindev/whichCat.js',
+    tech: ['Swift', 'iOS', 'TensorFlow Lite', 'TensorFlow.js', 'Machine Learning', 'Image Classification'],
+    id: 4
+  },
+  {
     link: 'https://ichbindev.github.io/Psych/',
     image: psych,
     name: 'Psych',
@@ -44,16 +54,6 @@ const projects = [
     code: 'https://github.com/ichbindev/Psych',
     tech: ['React'],
     id: 3
-  },
-  {
-    link: 'https://github.com/ichbindev/whichCat.js/blob/master/README.md',
-    image: whichCat,
-    name: 'whichCat.js',
-    description:
-      'A self-study iOS app able to correctly identify my cats using a machine learning model I trained.',
-    code: 'https://github.com/ichbindev/whichCat.js',
-    tech: ['Swift', 'iOS', 'TensorFlow Lite', 'TensorFlow.js', 'Machine Learning', 'Image Classification'],
-    id: 4
   },
 ];
 

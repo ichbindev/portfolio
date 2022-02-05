@@ -31,7 +31,7 @@ module.exports = {
       options: {
         host: "https://www.mlin.ac",
         sitemap: "https://www.mlin.ac/sitemap.xml",
-        policy: [{ userAgent: "*", allow: "/" }],
+        policy: [{ userAgent: "*", allow: "/", disallow: "/info" }],
       },
     }
   ],

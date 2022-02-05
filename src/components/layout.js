@@ -5,21 +5,22 @@ import SEO from './SEO';
 import '../assets/scss/main.scss';
 
 const Layout = ({ children, location }) => {
-  let content;
+  let content,
+    isHomePage = location && location.pathname === '/';
 
-  if (location && location.pathname === '/') {
+  if (isHomePage) {
     content = <div>{children}</div>;
   } else {
     content = (
       <div id="wrapper" className="page">
-        <div>{children}</div>
+        {children}
       </div>
     );
   }
 
   return (
     <>
-      <SEO/>
+      <SEO />
       {content}
     </>
   );
