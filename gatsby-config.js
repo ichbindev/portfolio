@@ -1,14 +1,14 @@
 module.exports = {
   siteMetadata: {
-    title: "Chris Mlinac - Portfolio",
-    defaultTitle: "Chris Mlinac - Portfolio",
-    titleTemplate: "%s",
+    title: 'Chris Mlinac - Portfolio',
+    defaultTitle: 'Chris Mlinac - Portfolio',
+    titleTemplate: '%s',
     author: 'Christopher Mlinac',
     description: 'My Portfolio',
-    url: "https://www.mlin.ac", // No trailing slash allowed!
-    siteUrl: "https://www.mlin.ac", // No trailing slash allowed!
-    image: "/img/avatar/avatar.jpg", // Path to your image you placed in the 'static' folder
-    twitterUsername: "@ichbindev",
+    url: 'https://www.mlin.ac', // No trailing slash allowed!
+    siteUrl: 'https://www.mlin.ac', // No trailing slash allowed!
+    image: '/img/avatar/avatar.jpg', // Path to your image you placed in the 'static' folder
+    twitterUsername: '@ichbindev',
   },
   plugins: [
     'gatsby-plugin-react-helmet',
@@ -27,16 +27,16 @@ module.exports = {
     },
     'gatsby-plugin-sass',
     {
-      resolve: "gatsby-plugin-robots-txt",
+      resolve: 'gatsby-plugin-robots-txt',
       options: {
-        host: "https://www.mlin.ac",
-        sitemap: "https://www.mlin.ac/sitemap.xml",
-        policy: [{ userAgent: "*", allow: "/", disallow: "/info" }],
+        host: 'https://www.mlin.ac',
+        sitemap: 'https://www.mlin.ac/sitemap.xml',
+        policy: [{ userAgent: '*', allow: '/' }],
       },
-    }
+    },
   ],
   proxy: {
     prefix: '/lambda',
-    url: 'https://d5o2rd8lqa.execute-api.us-east-1.amazonaws.com'
-  }
+    url: 'https://d5o2rd8lqa.execute-api.us-east-1.amazonaws.com',
+  },
 };
