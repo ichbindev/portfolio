@@ -1,7 +1,7 @@
 import React from 'react';
 import Layout from '../components/layout';
 
-export function FC(props) {
+export function FC() {
   return (
     <Layout>
       <div style={{ fontSize: '32px', textAlign: 'center' }}>
