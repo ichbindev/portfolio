@@ -49,11 +49,17 @@ const About = props => {
         most rewarding part of my work.
       </p>
       <p>
-        Currently, I am working as a Staff Full Stack Engineer at ZenBusiness, 
+        After a year, I joined ZenBusiness as a Senior Software Engineer, 
         where I am continuing to learn and refine my skills. Although 
         I am a full stack engineer, I have been working mainly on the frontend.
         This, coupled with my experience on the backend, allows
         me to feel comfortable in any part of the stack, whether it be SQL or CSS.
+      </p>
+      <p>
+        I'm currently working at ZenBusiness as a Staff Software Engineer, 
+        where I get to do the above as well as lead a team of 5 other engineers.
+        In addition to coding, I enjoy contributing to the product road map and 
+        helping my team grow technically and professionally.
       </p>
       {props.close}
     </article>
