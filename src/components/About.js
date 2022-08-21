@@ -57,7 +57,7 @@ const About = props => {
       </p>
       <p>
         I'm currently working at ZenBusiness as a Staff Software Engineer, 
-        where I get to do the above as well as lead a team of 5 other engineers.
+        where I get to do the above as well as lead a team of 6 engineers.
         In addition to coding, I enjoy contributing to the product road map and 
         helping my team grow technically and professionally.
       </p>
