@@ -42,6 +42,7 @@ const Work = props => {
           ))}
         </div>
       </span>
+      <p style={{color: 'red'}}>Note: Heroku has removed their free tier and some of these links are dead. I'm working on finding a new home for those the affected projects.</p>
       <p>{description}</p>
       {!!techUsed.length && <p>Technologies Used: {techUsed.join(', ')}</p>}
       {props.close}
