@@ -14,14 +14,14 @@ const Intro = props => {
       <span className="image main">
         <img
           src={pic}
-          alt="headshot of myself"
+          alt="animated headshot of myself, a white man with brown hair and a beard, wearing a blue hoodie"
           style={{ width: '200px', margin: '0 auto' }}
         />
       </span>
       <p>
-        Hi! My name is Chris, and I'm a web developer living in
-        Austin, Texas. My hobbies include metalworking, rock climbing, and
-        customizing mechanical keyboards. When I'm not doing the former, you can
+        Hi! My name is Chris, and I'm a web developer currently located in
+        Austin, Texas. My hobbies include hiking, (indoor) rock climbing, and falling into 
+        Wikipedia rabbit holes about philosophy. When I'm not doing any of those, you can
         find me hanging out with my wife, Haley, and cats, Jackson and Johnny.
       </p>
       {props.close}
