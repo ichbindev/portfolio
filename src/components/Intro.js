@@ -14,7 +14,7 @@ const Intro = props => {
       <span className="image main">
         <img
           src={pic}
-          alt="animated headshot of myself, a white man with brown hair and a beard, wearing a blue hoodie"
+          alt="headshot of myself, a white man with brown hair and a beard"
           style={{ width: '200px', margin: '0 auto' }}
         />
       </span>
