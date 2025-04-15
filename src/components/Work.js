@@ -1,12 +1,25 @@
 import React, { useState } from 'react';
 import Project from './Project';
 import projects from '../content/projects';
+import companies from '../content/companies';
+
+const initialDescription =
+  'Hover over a company or project for more information.';
 
 const Work = props => {
-  const [description, setDescription] = useState(
-    'Hover over a project for more information.'
-  );
+  const [description, setDescription] = useState(initialDescription);
   const [techUsed, setTechUsed] = useState([]);
+  const [selectedWork, setSelectedWork] = useState(companies);
+
+  const toggleSelectedWork = () => {
+    if (selectedWork === companies) {
+      setSelectedWork(projects);
+    } else {
+      setSelectedWork(companies);
+    }
+    setDescription(initialDescription);
+    setTechUsed([]);
+  };
 
   const onHover = project => {
     setDescription(project.description);
@@ -21,7 +34,9 @@ const Work = props => {
       }`}
       style={{ display: 'none' }}
     >
-      <h2 className="major">Work</h2>
+      <h2 className="major">
+        Work - {selectedWork === companies ? 'Previous Companies' : 'Projects'}
+      </h2>
       <span className="image main">
         <div
           style={{
@@ -30,7 +45,7 @@ const Work = props => {
             justifyContent: 'space-between',
           }}
         >
-          {projects.map(p => (
+          {selectedWork.map(p => (
             <Project
               key={p.id}
               link={p.link}
@@ -42,7 +57,13 @@ const Work = props => {
           ))}
         </div>
       </span>
-      <p style={{color: 'red'}}>Note: Heroku has removed their free tier and some of these links are dead. I'm working on finding a new home for those the affected projects.</p>
+      <div style={{ paddingBottom: '2rem' }}>
+        <button onClick={toggleSelectedWork}>
+          {selectedWork === companies
+            ? 'See Projects'
+            : 'See Previous Compaines'}
+        </button>
+      </div>
       <p>{description}</p>
       {!!techUsed.length && <p>Technologies Used: {techUsed.join(', ')}</p>}
       {props.close}

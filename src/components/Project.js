@@ -11,7 +11,7 @@ const Project = ({ link, image, name, code, onHover }) => {
         />
       </a>
       <h4>
-        <a href={code} className="icon fa-github" /> {name}
+        { code ? <a href={code} className="icon fa-github" />  : ''}{name}
       </h4>
     </div>
   );
