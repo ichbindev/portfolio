@@ -56,10 +56,24 @@ const About = props => {
         me to feel comfortable in any part of the stack, whether it be SQL or CSS.
       </p>
       <p>
-        I'm currently working at ZenBusiness as a Staff Software Engineer, 
-        where I get to do the above as well as lead a team of 6 engineers.
-        In addition to coding, I enjoy contributing to the product road map and 
+        I was promoted at ZenBusiness as a Staff Software Engineer, 
+        where I got to do more of the above as well as lead a team of 6 engineers.
+        In addition to coding, I enjoyed contributing to the product road map and 
         helping my team grow technically and professionally.
+      </p>
+      <p>
+        After ZenBusiness, I got the opportunity to work on a wonderful mission at 
+        Trove. I worked on custom warehouse software to sell unique items under one 
+        SKU, perfect for reselling used clothing goods with unique descriptions, 
+        extending their life and keepint them out of the landfill. I worked the full 
+        stack there as well, focusing on the warehouse software used by staff to run 
+        and manage warehouse inventory, as well as administrative functions like shipping, 
+        transferring inventory and customer service.
+      </p>
+      <p>
+        I am currently looking for a new opportunity, where I can use my technical skills 
+        to enhance the product and my business skills to make sure we are focusing on the 
+        right features in the right order to get the most of our teams' effort.
       </p>
       {props.close}
     </article>
