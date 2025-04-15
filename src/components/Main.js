@@ -3,7 +3,8 @@ import React from 'react';
 import Intro from './Intro';
 import Work from './Work';
 import About from './About';
-import Contact from './Contact';
+// import Contact from './Contact';
+import ContactCard from './ContactCard';
 
 class Main extends React.Component {
   render() {
@@ -25,7 +26,7 @@ class Main extends React.Component {
         <Intro close={close} {...this.props} />
         <Work close={close} {...this.props} />
         <About close={close} {...this.props} />
-        <Contact close={close} {...this.props} />
+        <ContactCard close={close} {...this.props} />
       </div>
     );
   }
