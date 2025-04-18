@@ -20,8 +20,7 @@ const Intro = props => {
       </span>
       <p>
         Hi! My name is Chris, and I'm a web developer currently located in
-        Austin, Texas. My hobbies include hiking, (indoor) rock climbing, and falling into 
-        Wikipedia rabbit holes about philosophy. When I'm not doing any of those, you can
+        Austin, Texas. My hobbies include hiking, (indoor) rock climbing, and listening to podcasts about movies (that I've never seen). When I'm not doing any of those, you can
         find me hanging out with my wife, Haley, and cats, Jackson and Johnny.
       </p>
       {props.close}
