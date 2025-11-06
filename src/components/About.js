@@ -7,7 +7,7 @@ const About = props => {
       className={`${props.article === 'about' ? 'active' : ''} ${
         props.articleTimeout ? 'timeout' : ''
       }`}
-      style={{ display: 'none' }}
+      style={{ display: 'none', textIndent: '1rem' }}
     >
       <h2 className="major">About</h2>
       <p>

@@ -2,9 +2,18 @@ import cvent from '../images/companies/cvent.png';
 import trove from '../images/companies/trove.png';
 import vrbo from '../images/companies/vrbo.png';
 import zenbusiness from '../images/companies/zenbusiness.png';
+import saffronSharkLabs from '../images/companies/saffronSharkLabs.png';
 
 const companies = [
-  {
+    {
+      link: 'https://www.saffronsharklabs.com',
+      image: saffronSharkLabs,
+      name: 'Saffron Shark Labs',
+      description: 'Saffron Shark Labs is a freelance web development business, specializing in developing modern web applications for startups looking to get off the ground. I\'m currently working with an EdTech startup to launch their initial product offering. Check out Saffron Shark Labs and reach out if you need any web development services!',
+      tech: ['Next.js', 'TypeScript', 'React', 'Tailwind', 'Postgres', 'Vercel', 'Supabase'],
+      id: 6,
+    },
+    {
     link: 'https://www.trove.com/',
     image: trove,
     name: 'Trove Recommerce',

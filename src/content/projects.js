@@ -4,8 +4,18 @@ import psych from '../images/projects/psych.png';
 import trainmethod from '../images/projects/trainmethod.png';
 import newtritious from '../images/projects/newtritious.png';
 import whichCat from '../images/projects/whichCat.png';
+import saffronSharkLabs from '../images/companies/saffronSharkLabs.png';
 
 const projects = [
+  {
+    link: 'https://www.saffronsharklabs.com',
+    image: saffronSharkLabs,
+    name: 'SSL Marketing Site',
+    description: 'This is the marketing page for my freelance web development company, Saffron Shark Labs. I built this site using Next.js and TypeScript to showcase my skills with modern web development tools and practices and chose to use Astro for it\'s speed and flexibility, as well as a chance to learn something new.',
+    code: 'https://github.com/ichbindev/saffron-shark-labs',
+    tech: ['Next.js', 'TypeScript', 'Astro', 'Tailwind', 'WebComponents'],
+    id: 6,
+  },
   {
     link: 'https://github.com/newtritious/Newtritious',
     image: newtritious,
@@ -33,6 +43,7 @@ const projects = [
       'WhichCatIsThat is an iOS app able to correctly identify my cats using a machine learning model I trained. I used Python and TensorFlow to train the original model based on pictures I took of my cats, then created a more accurate model with TeachableMachine. After creating the model, I created a simple browser app that used my webcam to test it live. Finally, I created an iOS app that was able to use the phone\'s camera and the TensorFlow model to correctly identify my cats to shocking accuracy. It was even able to identify a painting of my cat!',
     code: 'https://github.com/ichbindev/whichCat.js',
     tech: [
+      'AI',
       'Swift',
       'iOS',
       'TensorFlow Lite',
@@ -49,7 +60,7 @@ const projects = [
     description:
       'Psych is a memory game I made with visuals based on the TV show Psych. The goal is to click all nine characters exactly once. If you get it wrong, you get a sassy quote and must start over.',
     code: 'https://github.com/ichbindev/Psych',
-    tech: ['React'],
+    tech: ['React', 'JavaScript', 'CSS'],
     id: 3,
   },
   {

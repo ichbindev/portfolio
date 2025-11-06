@@ -7,10 +7,27 @@ import About from './About';
 import ContactCard from './ContactCard';
 
 class Main extends React.Component {
+
+  componentDidMount() {
+    const handleKeyDown = (event) => {
+        if (event.key === 'Escape') {
+          this.props.onCloseArticle();
+        }
+      };
+
+    document.addEventListener('keydown', handleKeyDown);
+  }
+
+  componentWillUnmount() {
+    document.removeEventListener('keydown', this.handleKeyDown);
+  }
+
   render() {
     let close = (
       <div
         className="close"
+        role="button"
+        tabIndex={0}
         onClick={() => {
           this.props.onCloseArticle();
         }}

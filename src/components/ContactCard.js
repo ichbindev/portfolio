@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import ContactInfo from './ContactInfo';
 
 const isStandaloneContactPage = typeof window !== 'undefined' ? window.location.pathname.indexOf('contact') > -1 : false;

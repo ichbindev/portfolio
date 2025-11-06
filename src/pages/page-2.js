@@ -1,18 +1,18 @@
 import React from 'react';
-import { sendEmail } from '../util/api';
+// import { sendEmail } from '../util/api';
 
 import Layout from '../components/layout';
 
 const SecondPage = () => {
-  const onSubmit = evt => {
-    evt.preventDefault();
-    const form = {
-      name: 'testName',
-      email: 'test@e.mail',
-      content: 'so long and thanks for all the fish'
-    };
-    sendEmail(form);
-  };
+  // const onSubmit = evt => {
+  //   evt.preventDefault();
+  //   const form = {
+  //     name: 'testName',
+  //     email: 'test@e.mail',
+  //     content: 'so long and thanks for all the fish'
+  //   };
+  //   sendEmail(form);
+  // };
 
   return (
   <Layout>

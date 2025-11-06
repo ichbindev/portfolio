@@ -1,5 +1,5 @@
 import React from 'react';
-import pic from '../images/face.png';
+import headshot from '../images/headshot.jpg';
 
 const Intro = props => {
   return (
@@ -13,7 +13,7 @@ const Intro = props => {
       <h2 className="major">Intro</h2>
       <span className="image main">
         <img
-          src={pic}
+          src={headshot}
           alt="headshot of myself, a white man with brown hair and a beard"
           style={{ width: '200px', margin: '0 auto' }}
         />

@@ -12,13 +12,13 @@ const ContactInfo = () => (
     </div>
     <div>
       Twitter:{' '}
-      <a href="https://twitter.com/ichbindev" target="_blank">
+      <a href="https://twitter.com/ichbindev" target="_blank" rel="noreferrer">
         @ichbindev
       </a>
     </div>
     <div>
       Github:{' '}
-      <a href="https://github.com/ichbindev" target="_blank">
+      <a href="https://github.com/ichbindev" target="_blank" rel="noreferrer">
         ichbindev
       </a>
     </div>
