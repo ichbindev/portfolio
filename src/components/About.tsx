@@ -1,11 +1,11 @@
-import React from 'react';
+import type { ArticleProps } from '../types';
 
-const About = props => {
+const About = ({ article, articleTimeout, close }: ArticleProps) => {
   return (
     <article
       id="about"
-      className={`${props.article === 'about' ? 'active' : ''} ${
-        props.articleTimeout ? 'timeout' : ''
+      className={`${article === 'about' ? 'active' : ''} ${
+        articleTimeout ? 'timeout' : ''
       }`}
       style={{ display: 'none', textIndent: '1rem' }}
     >
@@ -63,7 +63,7 @@ const About = props => {
         I am currently looking for a new opportunity, where I can use what I've learned over the 
         years to help improve an organization's product, processes and people.
       </p>
-      {props.close}
+      {close}
     </article>
   );
 };

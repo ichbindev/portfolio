@@ -1,5 +1,3 @@
-import React from 'react';
-
 const ContactInfo = () => (
   <div style={{ margin: '30px 0' }}>
     <h3>Chris Mlinac</h3>

@@ -3,8 +3,9 @@ import trove from '../images/companies/trove.png';
 import vrbo from '../images/companies/vrbo.png';
 import zenbusiness from '../images/companies/zenbusiness.png';
 import saffronSharkLabs from '../images/companies/saffronSharkLabs.png';
+import type { WorkItem } from '../types';
 
-const companies = [
+const companies: WorkItem[] = [
     {
       link: 'https://www.saffronsharklabs.com',
       image: saffronSharkLabs,

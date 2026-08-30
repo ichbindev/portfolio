@@ -1,12 +1,12 @@
-import React from 'react';
 import headshot from '../images/headshot.jpg';
+import type { ArticleProps } from '../types';
 
-const Intro = props => {
+const Intro = ({ article, articleTimeout, close }: ArticleProps) => {
   return (
     <article
       id="intro"
-      className={`${props.article === 'intro' ? 'active' : ''} ${
-        props.articleTimeout ? 'timeout' : ''
+      className={`${article === 'intro' ? 'active' : ''} ${
+        articleTimeout ? 'timeout' : ''
       }`}
       style={{ display: 'none' }}
     >
@@ -23,7 +23,7 @@ const Intro = props => {
         Austin, Texas. My hobbies include hiking, (indoor) rock climbing, and listening to podcasts about movies (that I've never seen). When I'm not doing any of those, you can
         find me hanging out with my wife, Haley, and cats, Jackson and Johnny.
       </p>
-      {props.close}
+      {close}
     </article>
   );
 };

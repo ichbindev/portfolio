@@ -5,8 +5,9 @@ import trainmethod from '../images/projects/trainmethod.png';
 import newtritious from '../images/projects/newtritious.png';
 import whichCat from '../images/projects/whichCat.png';
 import saffronSharkLabs from '../images/companies/saffronSharkLabs.png';
+import type { WorkItem } from '../types';
 
-const projects = [
+const projects: WorkItem[] = [
   {
     link: 'https://www.saffronsharklabs.com',
     image: saffronSharkLabs,

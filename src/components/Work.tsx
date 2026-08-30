@@ -1,41 +1,40 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import Project from './Project';
 import projects from '../content/projects';
 import companies from '../content/companies';
+import type { ArticleProps, WorkItem } from '../types';
 
 const initialDescription =
   'Hover over a company or project for more information.';
 
-const Work = props => {
+const Work = ({ article, articleTimeout, close }: ArticleProps) => {
   const [description, setDescription] = useState(initialDescription);
-  const [techUsed, setTechUsed] = useState([]);
-  const [selectedWork, setSelectedWork] = useState(companies);
+  const [techUsed, setTechUsed] = useState<string[]>([]);
+  const [showingCompanies, setShowingCompanies] = useState(true);
+
+  const selectedWork: WorkItem[] = showingCompanies ? companies : projects;
 
   const toggleSelectedWork = () => {
-    if (selectedWork === companies) {
-      setSelectedWork(projects);
-    } else {
-      setSelectedWork(companies);
-    }
+    setShowingCompanies((showing) => !showing);
     setDescription(initialDescription);
     setTechUsed([]);
   };
 
-  const onHover = project => {
-    setDescription(project.description);
-    setTechUsed(project.tech);
+  const onHover = (item: WorkItem) => {
+    setDescription(item.description);
+    setTechUsed(item.tech);
   };
 
   return (
     <article
       id="work"
-      className={`${props.article === 'work' ? 'active' : ''} ${
-        props.articleTimeout ? 'timeout' : ''
+      className={`${article === 'work' ? 'active' : ''} ${
+        articleTimeout ? 'timeout' : ''
       }`}
       style={{ display: 'none' }}
     >
       <h2 className="major">
-        Work - {selectedWork === companies ? 'Previous Companies' : 'Projects'}
+        Work - {showingCompanies ? 'Previous Companies' : 'Projects'}
       </h2>
       <span className="image main">
         <div
@@ -45,28 +44,26 @@ const Work = props => {
             justifyContent: 'space-between',
           }}
         >
-          {selectedWork.map(p => (
+          {selectedWork.map((item) => (
             <Project
-              key={p.id}
-              link={p.link}
-              image={p.image}
-              name={p.name}
-              code={p.code}
-              onHover={() => onHover(p)}
+              key={item.id}
+              link={item.link}
+              image={item.image}
+              name={item.name}
+              code={item.code}
+              onHover={() => onHover(item)}
             />
           ))}
         </div>
       </span>
       <div style={{ paddingBottom: '2rem' }}>
         <button onClick={toggleSelectedWork}>
-          {selectedWork === companies
-            ? 'See Projects'
-            : 'See Previous Compaines'}
+          {showingCompanies ? 'See Projects' : 'See Previous Companies'}
         </button>
       </div>
       <p>{description}</p>
       {!!techUsed.length && <p>Technologies Used: {techUsed.join(', ')}</p>}
-      {props.close}
+      {close}
     </article>
   );
 };
