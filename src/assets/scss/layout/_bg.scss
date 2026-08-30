@@ -38,7 +38,7 @@
         #{_palette(bg-overlay)},
         #{_palette(bg-overlay)}
       ),
-      url('../../images/overlay.png');
+      url('/images/overlay.png');
     background-size: auto, 256px 256px;
     background-position: center, center;
     background-repeat: no-repeat, repeat;
@@ -54,7 +54,7 @@
         'filter #{_duration(article)} ease-in-out'
       )
     );
-    background-image: url('../../images/bg.jpg');
+    background-image: url('/images/bg.jpg');
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
