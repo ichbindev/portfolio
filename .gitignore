@@ -1,9 +1,16 @@
-# Project dependencies
-.cache
+# Dependencies
 node_modules
-yarn-error.log
 
-# Build directory
-/public
-.DS_Store
+# Build output
+dist
+dist-server
+*.tsbuildinfo
+
+# Test output
+coverage
+
+# Local env
 .env
+.env.local
+
+.DS_Store
