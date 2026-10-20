@@ -1,0 +1,16 @@
+{
+  "name": "Chris Mlinac - Portfolio",
+  "short_name": "Mlinac",
+  "start_url": "/",
+  "background_color": "#663399",
+  "theme_color": "#663399",
+  "display": "minimal-ui",
+  "icons": [
+    {
+      "src": "/favicon.png",
+      "type": "image/png",
+      "sizes": "512x512",
+      "purpose": "any"
+    }
+  ]
+}
