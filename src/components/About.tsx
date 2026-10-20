@@ -60,8 +60,15 @@ const About = ({ article, articleTimeout, close }: ArticleProps) => {
         newest developer.
       </p>
       <p>
-        I am currently looking for a new opportunity, where I can use what I've learned over the 
-        years to help improve an organization's product, processes and people.
+        Since then my wife and I have relocated from Austin to Munich, Germany, a move we had been 
+        planning for years. Settling into life in Bavaria has involved a lot of hiking, a lot of 
+        paperwork, and a steadily improving command of German.
+      </p>
+      <p>
+        I am now a Senior Software Engineer at Tanso here in Munich, where we build sustainability 
+        and carbon accounting software for manufacturers. I am happy here. The work matters, the 
+        team is one I learn from, and I still get to spend part of my time on what I have always 
+        found most rewarding — helping the engineers around me grow.
       </p>
       {close}
     </article>
