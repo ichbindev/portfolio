@@ -61,7 +61,7 @@ const About = props => {
       </p>
       <p>
         Since then my wife and I have relocated from Austin to Munich, Germany, a move we had been 
-        planning for years. Settling into life in Bavaria has involved a lot of hiking, a lot of 
+        cosidering for years. Settling into life in Bavaria has involved a lot of hiking, a lot of 
         paperwork, and a steadily improving command of German.
       </p>
       <p>
