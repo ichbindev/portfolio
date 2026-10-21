@@ -4,7 +4,7 @@ module.exports = {
     defaultTitle: 'Chris Mlinac - Portfolio',
     titleTemplate: '%s',
     author: 'Christopher Mlinac',
-    description: 'My Portfolio',
+    description: 'Portfolio of Chris Mlinac, a senior software engineer based in Munich, Germany.',
     url: 'https://www.mlin.ac', // No trailing slash allowed!
     siteUrl: 'https://www.mlin.ac', // No trailing slash allowed!
     image: '/img/avatar/avatar.jpg', // Path to your image you placed in the 'static' folder
